@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="signup.html" method="get" enctype="multipart/form-data">
+      <div>
+        <label for="Username">Username</label>
+        <input type="text" name="Username" id="Username" required>
+      </div>
+      <div>
+        <label for="birth">Date of birth</label>
+        <input type="date" name="birth" id="birth" min="1800-01-01" max="2100-01-01" required>
+      </div>
+      <div>
+        <label for="Password">Password</label>
+        <input type="password" name="Password" id="Password" required minlength="3">
+      </div>
+      <div>
+        <label for="mobile">Phone no</label>
+        <input type="tel" name="mobile" id="mobile" required>
+      </div>
+      <div>
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" required>
+      </div>
+      <div>
+        <label for="about">About</label>
+        <textarea name="about" id="about" cols="20" rows="4"></textarea>
+      </div>
+      <div>
+        <label for="sms">SMS Alert</label>
+        <input type="checkbox" name="sms" id="sms" >
+      </div>
+      <div>
+        <label for="cal">Call Alert</label>
+        <input type="checkbox" name="cal" id="cal" >
+      </div>
+      <div>
+        <label>Gender:</label>
+      </div>
+      <div>
+        <input type="radio" name="gender" id="gender" value="male" required >
+        <label for="gender">Male</label>
+      </div>
+      <div>
+        <input type="radio" name="gender" id="gender" value="Female" required >
+        <label for="gender">Female</label>
+      </div>
+      <div>
+        <label for="state">State</label>
+        <select name="state" id="state">
+            <option value="Tamil nadu">Tamil nadu</option>
+            <option value="Kerala">Kerala</option>
+            <option value="Karnataka">Karnataka</option>
+            <option value="Andra Pradesh">Andra Pradesh</option>
+        </select>
+      </div>
+      <div>
+        <button>Sign up</button>
+        <button type="reset">Reset</button>
+      </div>
+    </form>
+  </body>
+</html>
